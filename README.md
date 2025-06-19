@@ -13,7 +13,8 @@
   - [`readonly`](#readonly)
   - [`serverId`](#serverid)
   - [`store`](#store)
-  - [`mode`](#mode)
+- [`mode`](#mode)
+- [Building the UI](#building-the-ui)
 - [How it works](#how-it-works)
 - [License](#license)
 
@@ -190,6 +191,17 @@ The production mode can also be enabled with the NODE_ENV environment variable:
 
 ```
 NODE_ENV=production node index.js
+```
+
+## Building the UI
+
+The UI sources are located in the [`ui`](ui) folder. To build them, make sure
+you have Node.js (v14 or later) installed and then run:
+
+```
+cd ui
+npm install
+npm run build
 ```
 
 ## How it works
